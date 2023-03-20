@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Refresher</title>
+    <script>
+      "use strict";
+      // let a = 34;
+      // let a = "This is me";
+      let a = 45;
+      a = 4555 + 5;
+      console.log(a);
+      // Numbers
+      // Objects
+      // Boolean - true or false
+      // String
+      // null
+      // undefined
+
+      function hello() {
+        console.log("Hey Sourav");
+      }
+      let a1 = {
+        r: 34,
+        m: 65,
+        // func: function myFunc(number) {
+        //   console.log(`The number is : ${number}`);
+        // },
+      };
+      document.addEventListener("click", function click() {
+        // alert("Hello");
+        let conf = confirm("Are you sure?");
+        // console.log(conf);
+      });
+
+      let arr = [34, 11, 54];
+      arr.forEach((element) => {
+        // console.log(element);
+      });
+      console.log(this);
+      // function myFunc(number) {
+      //   console.log(`The number is : ${this}`);
+      // }
+      let mobj = {
+        a: this,
+        myFunc: function (number) {
+          console.log(this);
+        },
+      };
+      mobj.myFunc();
+      console.log("The context here is : ", mobj.a);
+      setTimeout(() => {
+        console.log("Hello");
+      }, 3000);
+      console.log("hi");
+    </script>
+  </head>
+  <body>
+    <h1>Iam learning JS</h1>
+  </body>
+</html>
